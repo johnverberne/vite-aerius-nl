@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme';
-import { withBase, useData } from 'vitepress'
+import { withBase, useData } from 'vitepress';
 const { Layout } = DefaultTheme;
-const { theme } = useData()
+const { theme } = useData();
 
 export interface Product {
   product: string
@@ -57,7 +57,7 @@ defineProps<{
         <div class="product-item" v-for="product in products">
           <div class="product-item-wrapper">
             <div class="product-item-img">
-              <img :src=withBase(theme.product.logo) :alt=product.logoAlt>
+              <img :src=withBase(product.logo) :alt=product.logoAlt>
             </div>
             <div class="product-item-content">
               <p class="product-description-font">

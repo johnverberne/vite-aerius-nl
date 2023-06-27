@@ -5,7 +5,7 @@ import VPAeriusBreadCrum from "./VPAeriusBreadCrum.vue"
 import VPAeriusHomePage from "./VPAeriusHomePage.vue"
 import VPAeriusFooter from "./VPAeriusFooter.vue"
 
-const { site, frontmatter: fm } = useData();
+const { frontmatter: fm } = useData();
 const { Layout } = DefaultTheme;
 </script>
 
