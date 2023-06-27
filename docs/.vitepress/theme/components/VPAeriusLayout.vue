@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
-import { useData } from "vitepress"
-import VPAeriusBreadCrum from "./VPAeriusBreadCrum.vue"
-import VPAeriusHomePage from "./VPAeriusHomePage.vue"
-import VPAeriusFooter from "./VPAeriusFooter.vue"
+import { useData } from "vitepress";
+import VPAeriusBreadCrum from "./VPAeriusBreadCrum.vue";
+import VPAeriusHomePage from "./VPAeriusHomePage.vue";
+import VPAeriusFooter from "./VPAeriusFooter.vue";
+import VPAeriusProducts from "./VPAeriusProducts.vue";
 
 const { frontmatter: fm } = useData();
 const { Layout } = DefaultTheme;
@@ -36,12 +37,16 @@ const { Layout } = DefaultTheme;
   </div>
 
   <!-- other pages -->
-  <div v-else >
+  <div v-else>
     <VPAeriusBreadCrum v-if="fm.aerius"
       :breadcumtitle="fm.aerius.breadcumtitle" />
-      <div class="row justify-content-center">
-        <Layout class="main-content container"></Layout>
+    <main class="content-wrapper">
+      <div class="wrapper">
+        <div class="article content">
+          <Layout></Layout>
+        </div>
       </div>
+    </main>
   </div>
 
   <!-- footer -->

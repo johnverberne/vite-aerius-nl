@@ -7,24 +7,24 @@ home:
   productsTitle: Direct naar
   products:
     - product: calculator
-      logo: /calculator-1.png
+      logo: /calculator.svg
       logoAlt: AERIUS Calculator
       description: Bereken de emissie van een project en de depositie van stikstof  op Natura 2000-gebieden.
       link: https://calculator.aerius.nl/calculator/?locale=nl#
       linktext: Start AERIUS Calculator
     - product: register
-      logo: /register-1.png
+      logo: /register.svg
       description: De boekhouding van het Stikstofregistratiesysteem (SSRS), alleen toegankelijk voor de bevoegde gezagen.
       link: https://register.aerius.nl/register/login
       linktext: Start AERIUS Register
     - product: monitor
-      logo: /monitor-1.png
+      logo: /monitor.svg
       logoAlt: AERIUS Monitor
       description: Inzicht in de huidige emissie en depositie van stikstof en waar dit kan leiden tot gevolgen voor de natuur. 
       link: https://monitor.aerius.nl/
       linktext: Start AERIUS Monitor
     - product: connect
-      logo: /connect-1.png
+      logo: /connect.svg
       description: Ondersteuning van rechtstreeks verkeer van data tussen AERIUS en andere IT-systemen.
       link: https://register.aerius.nl/register/login
       linktext: Start AERIUS Register
@@ -35,8 +35,7 @@ home:
       linktext: Start AERIUS Check
 
   middleTitle: Informatiepunt Stikstof en Natura2000
-  middleText: Heeft u vragen over het gebruik van AERIUS producten? Neem dan contact op met <a href="https://www.bij12.nl/onderwerpen/stikstof-en-natura2000/informatiepunt-stikstof-en-natura-2000/helpdesk/" target="_blank">het Informatiepunt Stikstof en Natura2000 van Bij12</a>. U vindt daar ook nieuwsberichten en informatie over het gebruik van [AERIUS](https://www.bij12.nl/onderwerpen/stikstof-en-natura2000/aerius/).
-
+  middleText: Heeft u vragen over het gebruik van AERIUS producten? Neem dan contact op met <a href="https://www.bij12.nl/onderwerpen/stikstof-en-natura2000/informatiepunt-stikstof-en-natura-2000/helpdesk/" target="_blank">het Informatiepunt Stikstof en Natura2000 van Bij12</a>. U vindt daar ook nieuwsberichten en informatie over het gebruik van <a href="https://www.bij12.nl/onderwerpen/stikstof-en-natura2000/informatiepunt-stikstof-en-natura-2000/helpdesk/" target="_blank">AERIUS</a>.
   
   downloadsTitle: Meest gedownload
 
@@ -85,7 +84,9 @@ home:
       link: /toegankelijkheidsverlaring.html
 ---
 
-
+#
 AERIUS is het instrument dat neerslag (depositie) van stikstof op Natura2000-gebieden binnen Nederland kan uitrekenen. AERIUS bestaat uit meerdere producten met allemaal een eigen doel. Via deze site kunt u AERIUS producten openen en vindt u de documenten met uitleg over en achtergronden van de verschillende producten.
 
+#
 Gebruikers van AERIUS bepalen de stikstofneerslag van huidige en toekomstige projecten voor vergunningsaanvragen en de totale neerslag nu en in de toekomst. Daarnaast kunnen de bevoegd gezagen de stikstofneerslag van projectaanvragen inboeken en verwerken.
+

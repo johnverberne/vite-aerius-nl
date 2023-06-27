@@ -71,16 +71,11 @@ body {
 
 /* headers */
 h1, .h1 {
-  /*
   font-size: 2.0272865295rem;
   line-height: 1.2331754607;
-  margin-bottom: 1rem;
-  */
   display: block;
   font-weight: bold;
-  font-size: 2.6rem;
-  line-height: 1.1;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem
 }
 h2, .h2 {
   font-size: 1.8020324707rem;
@@ -158,12 +153,19 @@ p.intro
 section {
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .title-bar {
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  width: auto;
+  min-height: 70px;
+  padding-top: 1rem;
+    padding-bottom: 0rem;
   background-color: #01689b;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 .title-text, .title-text a {
   color: #ffffff;
@@ -191,6 +193,68 @@ section {
   font-family: 'RO Sans';
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+
+/* article content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.wrapper {
+  display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: flex-start;
+    -webkit-margin-end: -16px;
+    margin-inline-end: -16px;
+    -webkit-margin-start: -16px;
+    margin-inline-start: -16px;
+    position: relative;
+}
+@media (min-width: 992px) {
+  .content.article {
+      flex-grow: 0;
+      flex-shrink: initial;
+      flex-basis: 66.6666666667%;
+      max-width: 66.6666666667%;
+      -webkit-padding-end: 16px;
+      padding-inline-end: 16px;
+      -webkit-padding-start: 16px;
+      padding-inline-start: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .content.article {
+      flex-grow: 0;
+      flex-shrink: initial;
+      flex-basis: 75%;
+      max-width: 75%;
+      -webkit-padding-end: 16px;
+      padding-inline-end: 16px;
+      -webkit-padding-start: 16px;
+      padding-inline-start: 16px;
+  }
+}
+.content {
+    flex-grow: 0;
+    flex-shrink: initial;
+    flex-basis: 100%;
+    max-width: 100%;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+.content {
+    padding-top: 3rem;
 }
 
 
@@ -280,24 +344,8 @@ a {
   font-family: 'RO Sans';
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-top: 2rem;
 }
-
-/*
-p {
-  line-height: 1;
-  word-break: break-word;
-  word-wrap: break-word;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-h4 {
-  margin-bottom: 2rem !important;
-}
-h3 {
-  padding-bottom: 0.25rem!important;
-}
-*/
 
 /* most downloads */
 .most-downloads {

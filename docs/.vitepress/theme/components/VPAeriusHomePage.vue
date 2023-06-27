@@ -35,51 +35,57 @@ defineProps<{
 </script>
 
 <template>
-  <div class="container title-bar">
-    <h3 class="title-text">{{ title }}</h3>
-  </div>
-  <section class="home-logo"></section>
-  <div class="main-content container">
-    <div class="row justify-content-center">
-      <div class="text-col">
-        <div class="main-text">
-            <br/>
-            <Layout></Layout>
-        </div>
+  <div class="title-bar">
+    <div class="wrapper">
+      <div class="container">
+        <p class="title-text">{{ title }}</p>
       </div>
     </div>
   </div>
 
-  <div class="products">
-    <div class="container">
-      <div class="products-title">{{ productsTitle }}</div>
-      <div class="products-row">
-        <div class="product-item" v-for="product in products">
-          <div class="product-item-wrapper">
-            <div class="product-item-img">
-              <img :src=withBase(product.logo) :alt=product.logoAlt>
-            </div>
-            <div class="product-item-content">
-              <p class="product-description-font">
-                {{ product.description }}
-                <br/><br/>
-                <a :href=product.link class="text-primary">{{ product.linktext }}</a>
-              </p>
+  <section class="home-logo section" />
+
+  <main class="content-wrapper">
+    <div class="wrapper">
+      <div class="article content">
+        <Layout></Layout>
+      </div>
+    </div>
+  </main>
+
+  <main class="content-wrapper products">
+    <div class="wrapper">
+      <div class="container">
+       <div class="products-title">{{ productsTitle }}</div>
+        <div class="products-row">
+          <div class="product-item" v-for="product in products">
+            <div class="product-item-wrapper">
+              <div class="product-item-img">
+                <img :src=withBase(product.logo) :alt=product.logoAlt>
+              </div>
+              <div class="product-item-content">
+                <p class="product-description-font">
+                  {{ product.description }}
+                  <br/><br/>
+                  <a :href=product.link class="text-primary">{{ product.linktext }}</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <div class="container">
     <div class="row justify-content-center">
        <div class="text-col">
          <h4 class="middle-title">{{ middleTitle }}</h4>
-         <p class="middle-text">{{ middleText }}</p>
+         <p class="middle-text" v-html="middleText"></p>
        </div>
     </div>
   </div>
+
   <div class="middle-image"></div>
 
   <div class="most-downloads">

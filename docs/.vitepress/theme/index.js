@@ -4,6 +4,6 @@ import VPAeriusLayout from './components/VPAeriusLayout.vue';
 import './custom.css';
 
 export default {
-  ...DefaultTheme,
-  Layout: VPAeriusLayout,
+  ...DefaultTheme,  
+  Layout: VPAeriusLayout
 };
