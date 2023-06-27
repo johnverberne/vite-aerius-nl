@@ -1,0 +1,50 @@
+<script setup lang="ts">
+import DefaultTheme from "vitepress/theme";
+import { useData } from "vitepress"
+import VPAeriusBreadCrum from "./VPAeriusBreadCrum.vue"
+import VPAeriusHomePage from "./VPAeriusHomePage.vue"
+import VPAeriusFooter from "./VPAeriusFooter.vue"
+
+const { site, frontmatter: fm } = useData();
+const { Layout } = DefaultTheme;
+</script>
+
+<template>
+  <!--header-->
+  <div class="logo-wrapper">
+    <img src="/rijksoverheid.svg" alt="Logo Rijksoverheid" />
+  </div>
+
+  <!-- remove debug page types -->
+  <a href="/home.html">Home</a> | <a href="/downloads.html">Downloads</a> | <a href="/toegankelijkheidsverklaring.html">Toegankelijkheidsverklaring</a>
+
+  <!--home page-->
+  <div v-if="fm.layout == 'home'">
+    <VPAeriusHomePage v-if="fm.home"
+      :title="fm.home.title"
+      :productsTitle="fm.home.productsTitle"
+      :products="fm.home.products"
+      :middleTitle="fm.home.middleTitle"
+      :middleText="fm.home.middleText"
+      :downloadsTitle="fm.home.downloadsTitle" 
+      :mostDownloads="fm.home.mostDownloads"
+      :seeAlso="fm.home.seeAlso"
+      :otherSubjects="fm.home.otherSubjects"
+      :service="fm.home.service"
+      :about="fm.home.about"
+      />
+  </div>
+
+  <!-- other pages -->
+  <div v-else >
+    <VPAeriusBreadCrum v-if="fm.aerius"
+      :breadcumtitle="fm.aerius.breadcumtitle" />
+      <div class="row justify-content-center">
+        <Layout class="main-content container"></Layout>
+      </div>
+  </div>
+
+  <!-- footer -->
+  <VPAeriusFooter />
+
+</template>

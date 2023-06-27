@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 481 225">
+  <defs>
+    <style>
+      .c {
+        fill: url(#b);
+      }
+
+      .d {
+        fill: #f9eccd;
+      }
+
+      .e, .f, .g {
+        fill: #fff;
+      }
+
+      .h {
+        letter-spacing: -.02em;
+      }
+
+      .f {
+        font-family: RijksoverheidSansHeading-Bold, RijksoverheidSansHeading;
+        font-size: 65.98px;
+        font-weight: 700;
+      }
+
+      .g {
+        font-family: RijksoverheidSansText-Regular, RijksoverheidSansText;
+        font-size: 16.11px;
+      }
+    </style>
+    <linearGradient id="b" x1="240.5" y1="225" x2="240.5" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6b21c"/>
+      <stop offset=".07" stop-color="#f3a920"/>
+      <stop offset=".26" stop-color="#ec9225"/>
+      <stop offset=".46" stop-color="#e4822b"/>
+      <stop offset=".69" stop-color="#e17a31"/>
+      <stop offset="1" stop-color="#e17731"/>
+    </linearGradient>
+  </defs>
+  <rect class="c" width="481" height="225"/>
+  <g>
+    <text class="f" transform="translate(140.21 159.3)"><tspan x="0" y="0">AERI</tspan><tspan class="h" x="125.56" y="0">U</tspan><tspan x="166.59" y="0">S</tspan></text>
+    <g>
+      <polygon class="e" points="232.69 27.76 240.34 14.52 247.98 27.76 232.69 27.76"/>
+      <path class="e" d="m254.27,37.06h-27.89c-8.58,0-15.54,6.94-15.54,15.52v27.92c0,8.58,6.96,15.52,15.54,15.52h6.33v-13.09h15.27v13.09h6.29c8.6,0,15.55-6.94,15.55-15.52v-27.92c0-8.58-6.95-15.52-15.55-15.52Zm-21.58,28.34l7.65-13.24,7.64,13.24h-15.29Z"/>
+    </g>
+    <text class="g" transform="translate(336.14 116.22)"><tspan x="0" y="0">®</tspan></text>
+  </g>
+  <g>
+    <path class="d" d="m195.51,206.47c-2.55.51-4.33.76-7.65.76-8.67,0-15.3-5.61-15.3-16.83,0-12.75,8.16-18.1,16.32-18.1,2.8,0,4.33.25,6.63.76l-.51,3.31c-2.8-.51-3.82-.76-6.37-.76-6.12,0-12.24,4.59-12.24,14.28s5.35,14.02,12.24,14.02c2.55,0,4.08,0,6.88-.76v3.31h0Z"/>
+    <path class="d" d="m221.01,191.17h-16.06v15.81h-3.57v-34.16h3.57v15.04h16.06v-15.04h3.57v34.16h-3.57v-15.81Z"/>
+    <path class="d" d="m234.01,172.82h16.57v3.31h-13v11.73h11.73v3.31h-11.73v12.75h13.26v3.31h-16.83v-34.42h0Z"/>
+    <path class="d" d="m279.14,206.47c-2.55.51-4.33.76-7.65.76-8.67,0-15.3-5.61-15.3-16.83,0-12.75,8.16-18.1,16.06-18.1,2.8,0,4.33.25,6.63.76l-.51,3.31c-2.8-.51-3.82-.76-6.37-.76-6.12,0-12.24,4.59-12.24,14.28s5.35,14.02,12.24,14.02c2.55,0,4.08,0,6.88-.76l.25,3.31h0Z"/>
+    <path class="d" d="m288.31,172.82v15.04h2.8l12.49-15.04h4.33l-13.51,16.06,14.02,17.85h-4.84l-12.24-15.81h-3.06v15.81h-3.57v-33.91h3.57Z"/>
+  </g>
+</svg>

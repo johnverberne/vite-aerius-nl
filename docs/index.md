@@ -1,0 +1,35 @@
+---
+layout: home
+
+hero:
+  heroImage: /hero.jpg
+  heroAlt: Logo image
+  name: aerius-nl
+  text: AERIUS, rekeninstrument voor de leefomgeving
+  tagline: Wie iets wil ondernemen waardoor mogelijk stikstof terechtkomt in Natura 2000-gebieden, moet deze effecten mogelijk berekenen in het kader van toestemmings­verlening. Met behulp van AERIUS Calculator kan de emissie en depositie van het project worden berekend en indien nodig door het bevoegd gezag beoordeeld.
+  actionText: Get started
+  actionLink: downloads
+  actions:
+    - icon: ⚡️
+      title: ...
+      details: link
+      theme: calculator
+      text: Bereken de emissie van een project en de depositie van stikstof  op Natura 2000-gebieden.
+      link-text: Start AERIUS Calculator
+      link: https://calculator.aerius.nl/calculator/?locale=nl#
+    - theme: register
+      text: De boekhouding van het Stikstofregistratiesysteem (SSRS), alleen toegankelijk voor de bevoegde gezagen.
+      link-text: Start AERIUS Register
+      link: https://register.aerius.nl/register/login
+    - theme: monitor
+      text: Inzicht in de huidige emissie en depositie van stikstof en waar dit kan leiden tot gevolgen voor de natuur. 
+      link-text: Start AERIUS Monitor
+      link: https://monitor.aerius.nl/
+    - theme: connect
+      text: Ondersteuning van rechtstreeks verkeer van data tussen AERIUS en andere IT-systemen.  
+      link-text: Start AERIUS Connect
+      link: https://connect.aerius.nl/api/
+  footer: MIT Licensed | Copyright © 2019-present Evan You
+---
+
+[Home](/home.html) | [Downloads](/downloads.html) 
