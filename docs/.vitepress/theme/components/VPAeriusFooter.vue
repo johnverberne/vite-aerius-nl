@@ -7,7 +7,7 @@
         <div class="footer-col">
           <h5 class="footer-font-title">Service</h5>
           <div class="footer-font">
-            <a href="/downloads.html" class="text-white">Downloads</a>
+            <a href="downloads.html" class="text-white">Downloads</a>
           </div>
           <div class="footer-font">
             <a href="https://aerius.stainlessmedia.com/huisstijl.html" class="text-white">Huisstijl AERIUS</a>
@@ -19,7 +19,7 @@
         <div class="footer-col">
           <h5 class="footer-font-title">Over deze site</h5>        
           <div class="footer-font">
-            <a href="/toegankelijkheid.html" class="text-white">Toegankelijkheid</a>
+            <a href="toegankelijkheid.html" class="text-white">Toegankelijkheid</a>
           </div>
         </div>
       </div>

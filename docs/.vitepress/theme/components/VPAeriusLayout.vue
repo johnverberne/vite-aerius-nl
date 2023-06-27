@@ -16,7 +16,7 @@ const { Layout } = DefaultTheme;
   </div>
 
   <!-- remove debug page types -->
-  <a href="/home.html">Home</a> | <a href="/downloads.html">Downloads</a> | <a href="/toegankelijkheidsverklaring.html">Toegankelijkheidsverklaring</a>
+  <a href="home.html">Home</a> | <a href="downloads.html">Downloads</a> | <a href="toegankelijkheidsverklaring.html">Toegankelijkheidsverklaring</a>
 
   <!--home page-->
   <div v-if="fm.layout == 'home'">
