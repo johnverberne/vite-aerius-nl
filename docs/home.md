@@ -89,4 +89,3 @@ AERIUS is het instrument dat neerslag (depositie) van stikstof op Natura2000-geb
 
 #
 Gebruikers van AERIUS bepalen de stikstofneerslag van huidige en toekomstige projecten voor vergunningsaanvragen en de totale neerslag nu en in de toekomst. Daarnaast kunnen de bevoegd gezagen de stikstofneerslag van projectaanvragen inboeken en verwerken.
-

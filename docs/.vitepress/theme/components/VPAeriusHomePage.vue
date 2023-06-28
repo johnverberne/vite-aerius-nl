@@ -45,7 +45,7 @@ defineProps<{
 
   <section class="home-logo section" />
 
-  <main class="content-wrapper">
+  <main>
     <div class="wrapper">
       <div class="article content">
         <Layout></Layout>
@@ -53,7 +53,7 @@ defineProps<{
     </div>
   </main>
 
-  <main class="content-wrapper products">
+  <main class="products">
     <div class="wrapper">
       <div class="container">
        <div class="products-title">{{ productsTitle }}</div>
@@ -77,47 +77,55 @@ defineProps<{
     </div>
   </main>
 
-  <div class="container">
-    <div class="row justify-content-center">
-       <div class="text-col">
-         <h4 class="middle-title">{{ middleTitle }}</h4>
-         <p class="middle-text" v-html="middleText"></p>
-       </div>
+  <main class="middle">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-col">
+            <p class="middle-title">{{ middleTitle }}</p>
+            <p class="middle-text" v-html="middleText"></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 
   <div class="middle-image"></div>
 
-  <div class="most-downloads">
-    <div class="container">
-      <div class="most-downloads-header">{{ downloadsTitle }}</div>
-    </div>
-    <div class="container">
-      <div class="most-downloads-row" v-for="item in mostDownloads">
-        <div class="most-downloads-column">
-          <a :href=item.link target="_blank">{{ item.description }}</a>
-        </div>
-        <div class="most-downloads-column">
-          {{ item.date }}
+  <main class="most-downloads">
+    <div class="wrapper">
+      <div class="container">
+        <div class="most-downloads-header">{{ downloadsTitle }}</div>
+        <div class="most-downloads-row" v-for="item in mostDownloads">
+          <div class="most-downloads-column">
+            <a :href=item.link target="_blank">{{ item.description }}</a>
+          </div>
+          <div class="most-downloads-column">
+            {{ item.date }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>  
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="most-downloads-column">
-        <h3 class="middle-title">Zie ook</h3>
-        <div v-for="item in seeAlso">
-          <a :href=item.link target="_blank">{{ item.description }}</a>
-        </div>
-      </div>
-      <div class="most-downloads-column">
-        <h3 class="middle-title">Overige onderwerpen</h3>
-        <div v-for="item in otherSubjects">
-          <a :href=item.link target="_blank">{{ item.description }}</a>
+  <main>
+    <div class="wrapper" >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="most-downloads-column">
+            <h3 class="middle-title">Zie ook</h3>
+            <div v-for="item in seeAlso">
+              <a :href=item.link target="_blank">{{ item.description }}</a>
+            </div>
+          </div>
+          <div class="most-downloads-column">
+            <h3 class="middle-title">Overige onderwerpen</h3>
+            <div v-for="item in otherSubjects">
+              <a :href=item.link target="_blank">{{ item.description }}</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>

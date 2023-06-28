@@ -5,6 +5,7 @@ import VPAeriusBreadCrum from "./VPAeriusBreadCrum.vue";
 import VPAeriusHomePage from "./VPAeriusHomePage.vue";
 import VPAeriusFooter from "./VPAeriusFooter.vue";
 import NotFound from "./NotFound.vue";
+import Piwik from "./VPAeriusPiwik.vue";
 
 const { frontmatter: fm } = useData();
 const { Layout } = DefaultTheme;
@@ -48,9 +49,9 @@ const { page } = useData();
     <div v-else>
       <VPAeriusBreadCrum v-if="fm.aerius"
         :breadcumtitle="fm.aerius.breadcumtitle" />
-      <main class="content-wrapper">
-        <div class="wrapper">
-          <div class="article content">
+      <main>
+        <div class="wrapper" >
+          <div class="container">
             <Layout></Layout>
           </div>
         </div>
@@ -61,3 +62,5 @@ const { page } = useData();
   <!-- footer -->
   <VPAeriusFooter />
 </template>
+
+<Piwik />
